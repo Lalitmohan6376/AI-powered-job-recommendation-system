@@ -26,7 +26,3 @@ The system helps users find suitable job opportunities quickly and efficiently.
 
 ### Database
 - MySQL  
-
----
-
-## 📂 Project Structure

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web development recommendation</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+<a href="{{ url_for('home') }}">Home</a>
+<a href="{{ url_for('ai') }}">AI career</a>
+<a href="{{ url_for('web') }}">development career</a>
+<a href="{{ url_for('design') }}">Design & Animation</a>
+<a href="{{ url_for('history') }}">history</a>
+</nav>
+
+<div class="career-text">
+<h2>Development Career Recommendation</h2>
+<p>
+Enter your development skills and education to get the best career 
+recommendations in Web Development and App Development. 
+Our AI system analyzes your skills and suggests suitable job roles 
+based on industry demand.
+</p>
+</div>
+
+<div class="main">
+<form action="/web" method="POST">
+
+<label>Enter your skills</label>
+<input type="text" name="skills" placeholder="html,css,js" autocomplete="off"><br><br>
+
+<label>Enter Education</label>
+<input type="text" name="education" placeholder="Btech" autocomplete="off"><br><br>
+
+<button type="submit" id="getbtn">Get Recommendation</button>
+
+</form>
+</div>
+
+
+<div class="result-section">
+<h3>Recommended Jobs</h3>
+
+<div class="result-grid">
+
+<!-- Job Roles -->
+<div class="result-card">
+<h4>Recommended Job Roles</h4>
+
+<ul class="result-list">
+
+{% if results %}
+{% for job in results %}
+<li>{{ job.role }} ({{ job.match }}%)</li>
+{% endfor %}
+{% else %}
+<li>Result will appear here</li>
+{% endif %}
+
+</ul>
+
+</div>
+
+
+<!-- Projects -->
+<div class="result-card">
+<h4>Suggested Projects</h4>
+
+<ul class="result-list">
+
+{% if results %}
+{% for job in results %}
+<li>{{ job.project }}</li>
+{% endfor %}
+{% else %}
+<li>Project suggestion will appear here</li>
+{% endif %}
+
+</ul>
+
+</div>
+
+
+<!-- Mathematics -->
+<div class="result-card">
+<h4>Required Mathematics Knowledge</h4>
+
+<ul class="result-list">
+{% if results %}
+<li>{{ results[0].math }}</li>
+{% else %}
+<li>Math topics will appear here</li>
+{% endif %}
+
+</ul>
+
+</div>
+
+
+<!-- Industry Demand -->
+<div class="result-card">
+<h4>Industry Demand Level</h4>
+
+<p class="demand-level">
+{% if results %}
+{{ results[0].demand }}
+{% else %}
+Result will appear here
+{% endif %}
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

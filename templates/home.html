@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav class="navbar">
+    <a href="{{ url_for('home') }}">Home</a>
+   <a href="{{ url_for('ai') }}">AI career</a>
+   <a href="{{ url_for('web') }}">deveploment career</a>
+   <a href="{{ url_for('design') }}">Design & Animation</a>
+   <a href="{{ url_for('history') }}">history</a>
+</nav>
+<input type="button" class="login" value="Login">
+<h1 class="heading">Find your perfect Tech & Non-Tech <br>Career with AI.</h1>
+<p class="para">You can find your perfect job using AI.AI suggest you the Tech & Non Tech job roles.<br>
+An AI recommendation system is a technology <br> that uses artificial intelligence and data analysis to .suggest relevant items or decisions <br>based on a user’s preferences, behavior, or input data. It analyzes patterns in large datasets <br> using techniques such as machine learning and similarity algorithms to provide <br> personalized recommendations.</p>
+<img src = "{{ url_for('static',filename='images/photo4.jpg') }}">
+<a href="career.html">
+<button class="btn">View more Recommendation
+</button>
+</a><h5 class="how">How it Works</h5>
+
+<div class="container">
+
+    <div class="box">
+        <h3 class="h">Step 1</h3>
+        <p class="text">
+        The process begins when the user enters their basic information such as education, interests, and skills related to technology or creative fields.<br>
+The user may also select the field in which they want career guidance such as Artificial Intelligence, Development, or Designing and Animation.<br>
+This step helps the system understand the user’s background and current knowledge level.<br>
+It also identifies the user’s interests and preferred career direction.<br>
+<br> </p>
+    </div>
+
+    <div class="box">
+        <h3 class="h">Step 2</h3>
+        <p class="text">
+        After receiving the user's information, the system processes the data using AI-based logic and analysis techniques.<br>
+The platform analyzes the entered skills, interests, and education details carefully.<br>
+It compares this information with different career categories available in the system.<br>
+The system evaluates multiple possibilities such as AI careers, Development roles, and creative fields like Designing and Animation.<br>
+This analysis helps the system determine which career path is most suitable for the user.<br></p>
+    </div>
+
+    <div class="box">
+        <h3 class="h">Step 3</h3>
+        <p class="text">
+        After completing the analysis, the system generates personalized career recommendations for the user.<br>
+The platform suggests different job roles and career paths based on the user's skills and interests.<br>
+Each category provides specific recommendations such as AI Engineer, Web Developer, App Developer, or Graphic Designer.<br>
+The system may also highlight important skills that the user should learn to grow in the selected field.<br>
+<br></p>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web development recommendation</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('ai') }}">AI career</a>
+    <a href="{{ url_for('web') }}">deveploment career</a>
+    <a href="{{ url_for('design') }}">Design & Animation</a>
+    <a href="{{ url_for('history') }}">history</a>
+</nav>
+
+<section class="design-career">
+
+<div class="career-text">
+    <h2>Design & Animation Career Recommendation</h2>
+    <p>
+        Enter your design skills and education to discover the best career
+        opportunities in UI/UX design, graphic design, and animation.
+        Our AI recommendation system helps you find the most suitable
+        job roles based on your creative skills.
+    </p>
+</div>
+
+<!-- FORM ADDED -->
+<form method="POST">
+
+<div class="input-box">
+
+    <div class="input-group">
+        <label>Enter your skills</label>
+        <input type="text" name="skills" placeholder="Photoshop, UI Design, Animation">
+    </div>
+
+    <div class="input-group">
+        <label>Enter Education</label>
+        <input type="text" name="education" placeholder="BDes, BTech, Diploma">
+    </div>
+
+    <button type="submit" class="recommend-btn">Get Recommendation</button>
+
+</div>
+
+</form>
+
+<div class="result-section">
+<h3>Recommended Jobs</h3>
+
+<div class="result-grid">
+
+{% if results %}
+
+<!-- Job Roles -->
+<div class="result-card">
+    <h4>Recommended Job Roles</h4>
+    <ul class="result-list">
+        {% for job in results %}
+        <li>{{ job.role }} ({{ job.match }}%)</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- Projects -->
+<div class="result-card">
+    <h4>Suggested Projects</h4>
+    <ul class="result-list">
+        {% for job in results %}
+        <li>{{ job.project }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- Mathematics -->
+<div class="result-card">
+    <h4>Required Mathematics Knowledge</h4>
+    <ul class="result-list">
+        {% for job in results %}
+        <li>{{ job.math }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- Industry Demand -->
+<div class="result-card">
+    <h4>Industry Demand Level</h4>
+    <p class="demand-level">{{ results[0].demand }}</p>
+</div>
+
+{% else %}
+
+<!-- Default message -->
+<div class="result-card">
+    <h4>Recommended Job Roles</h4>
+    <ul class="result-list">
+        <li>Result will appear here</li>
+    </ul>
+</div>
+
+{% endif %}
+
+</div>
+
+</div>
+
+</section>
+</body>
+</html>

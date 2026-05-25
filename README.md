@@ -25,4 +25,5 @@ The system helps users find suitable job opportunities quickly and efficiently.
 - Python (Flask)
 
 ### Database
-- MySQL  
+- MySQL
+  

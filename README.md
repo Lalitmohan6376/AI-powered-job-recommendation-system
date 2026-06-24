@@ -58,6 +58,7 @@ The system helps users find suitable job opportunities quickly and efficiently.
 * ⚡ User Profile Matching
 * 📈 Recommendation Scoring
 
+'''
 📂 AI-Powered-Job-Recommendation-System
 │
 ├── 📁 datasets
@@ -97,3 +98,4 @@ The system helps users find suitable job opportunities quickly and efficiently.
 ├── 📄 app.py
 ├── 📄 job_recommendation.ipynb
 └── 📄 README.md
+'''

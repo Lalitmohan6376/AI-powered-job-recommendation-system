@@ -58,16 +58,14 @@ The system helps users find suitable job opportunities quickly and efficiently.
 * ⚡ User Profile Matching
 * 📈 Recommendation Scoring
 
-'''
-📂 AI-Powered-Job-Recommendation-System
-│
-├── 📁 datasets
+AI-Powered-Job-Recommendation-System
+├── datasets
 │   ├── ai_job_dataset.csv
 │   ├── animation.csv
 │   ├── design.csv
 │   └── dev.csv
 │
-├── 📁 models
+├── models
 │   ├── ai_job.pkl
 │   ├── design.pkl
 │   ├── dev.pkl
@@ -78,24 +76,24 @@ The system helps users find suitable job opportunities quickly and efficiently.
 │   ├── vectorizer_ai.pkl
 │   └── vectorizer_design.pkl
 │
-├── 📁 screenshots
+├── screenshots
 │   ├── Screenshot1.png
 │   ├── Screenshot2.png
 │   ├── Screenshot3.png
 │   └── Screenshot4.png
 │
-├── 📁 static
-│   ├── 📁 images
+├── static
+│   ├── images
 │   └── style.css
 │
-├── 📁 templates
+├── templates
 │   ├── ai.html
 │   ├── design.html
 │   ├── history.html
 │   ├── home.html
 │   └── web.html
 │
-├── 📄 app.py
-├── 📄 job_recommendation.ipynb
-└── 📄 README.md
-'''
+├── app.py
+├── job_recommendation.ipynb
+└── README.md
+

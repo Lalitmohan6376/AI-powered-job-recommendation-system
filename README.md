@@ -58,42 +58,44 @@ The system helps users find suitable job opportunities quickly and efficiently.
 * ⚡ User Profile Matching
 * 📈 Recommendation Scoring
 
-AI-Powered-Job-Recommendation-System
-├── datasets
-│   ├── ai_job_dataset.csv
-│   ├── animation.csv
-│   ├── design.csv
-│   └── dev.csv
+ ```bash
+📦 AI-Powered-Job-Recommendation-System
 │
-├── models
-│   ├── ai_job.pkl
-│   ├── design.pkl
-│   ├── dev.pkl
-│   ├── tfidf_matrix.pkl
-│   ├── tfidf_matrix_ai.pkl
-│   ├── tfidf_matrix_design.pkl
-│   ├── vectorizer.pkl
-│   ├── vectorizer_ai.pkl
-│   └── vectorizer_design.pkl
+├── 📂 datasets
+│   ├── 📄 ai_job_dataset.csv
+│   ├── 📄 animation.csv
+│   ├── 📄 design.csv
+│   └── 📄 dev.csv
 │
-├── screenshots
-│   ├── Screenshot1.png
-│   ├── Screenshot2.png
-│   ├── Screenshot3.png
-│   └── Screenshot4.png
+├── 📂 models
+│   ├── 📄 ai_job.pkl
+│   ├── 📄 design.pkl
+│   ├── 📄 dev.pkl
+│   ├── 📄 tfidf_matrix.pkl
+│   ├── 📄 tfidf_matrix_ai.pkl
+│   ├── 📄 tfidf_matrix_design.pkl
+│   ├── 📄 vectorizer.pkl
+│   ├── 📄 vectorizer_ai.pkl
+│   └── 📄 vectorizer_design.pkl
 │
-├── static
-│   ├── images
-│   └── style.css
+├── 📂 screenshots
+│   ├── 📄 Screenshot1.png
+│   ├── 📄 Screenshot2.png
+│   ├── 📄 Screenshot3.png
+│   └── 📄 Screenshot4.png
 │
-├── templates
-│   ├── ai.html
-│   ├── design.html
-│   ├── history.html
-│   ├── home.html
-│   └── web.html
+├── 📂 static
+│   ├── 📂 images
+│   └── 📄 style.css
 │
-├── app.py
-├── job_recommendation.ipynb
-└── README.md
-
+├── 📂 templates
+│   ├── 📄 ai.html
+│   ├── 📄 design.html
+│   ├── 📄 history.html
+│   ├── 📄 home.html
+│   └── 📄 web.html
+│
+├── 📄 app.py
+├── 📄 job_recommendation.ipynb
+└── 📄 README.md
+```

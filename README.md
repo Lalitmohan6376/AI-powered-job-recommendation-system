@@ -99,3 +99,4 @@ The system helps users find suitable job opportunities quickly and efficiently.
 ├── 📄 job_recommendation.ipynb
 └── 📄 README.md
 ```
+thank you

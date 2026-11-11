@@ -1,4 +1,4 @@
-# 🤖 AI-Powered Job Recommendation Systems
+# 🤖 AI-Powered Job Recommendation System
 
 ## 📌 Overview
 This project is an AI-based job recommendation system that suggests relevant jobs to users based on their skills, interests, and profile data.  
